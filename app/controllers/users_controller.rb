@@ -5,4 +5,9 @@ class UsersController < ApplicationController
     render json: user
   end
 
+  def admin 
+    users = User.all
+    render json: users
+  end
+
 end
